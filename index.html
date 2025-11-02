@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" 
+    rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-amber-50 via-green-100 to-amber-50">
+
+    
+    <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-gray-800">GreenSpace Club</a>
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="text-gray-800 hover:text-blue-500">Home</a>
+          <a href="#hero" class="text-gray-800 hover:text-blue-500">About</a>
+          <a href="#activity" class="text-gray-800 hover:text-blue-500">Add Activity</a>
+          <a href="#myactivity" class="text-gray-800 hover:text-blue-500">My Activity</a>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a>
+      <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-green-700 mb-4">Welcome to GreenSpace Club </h1>
+            <p class="text-xl text-amber-600 mb-8">Skill.Knowledge.Learn</p>
+            <button id="heroBtn" class="bg-gradient-to-r from amber-400 via-green-100 to-amber-100 text-amber-600 
+                                        border border-1 font-bold px-8 py-3 rounded-full font-semibold 
+                                        hover:bg-gray-100 transition">
+                Explore Activities
+            </button>
+        </div>
+    </section>
+
+<!-- activity Section -->
+    <section id="myactivity" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">My Activity</h2>
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="project web bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="1.jpg" alt="Tic Tac Toe Game" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">Data science contest</h3>
+                        
+                    </div>
+                    <p class="text-gray-600 mb-4">A Data science contest program</p>
+                    <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">contest</span>
+                </div>
+                <div class="project app bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="1.jpg" alt="Tic Tac Toe Game" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-gray-800">Competitive Programming contest</h3>
+                        
+                    </div>
+                    <p class="text-gray-600 mb-4">A Competitive Programming contest</p>
+                    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">contest</span>
+                </div>
+                <div class="project game bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="1.jpg" alt="Tic Tac Toe Game" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="flex items-center justify-center mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 ">>Artificial Inteligence Hackathone</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-center">a Artificial Inteligence Hackathone</p>
+                    <div class="flex justify-center mb-4">
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Hackathone</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section id="activity" class="pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-4 bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-4">Add Activity</h1>
+    <form id="todo-form" class="flex mb-4">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Add a new task..."
+        class="flex-1 border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-green-600"
+      >
+        Add
+      </button>
+    </form>
+    <ul id="todo-list" class="space-y-2"></ul>
+  </div>
+</section>
+    
+
+<footer class="bg-gray-900 text-gray-400 py-6">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+        <a href="#" class="flex items-center space-x-3">
+            <span class="text-lg font-semibold text-white">GreenSpace Club</span>
+        </a> 
+    </div>
+    
+    <div class="flex justify-end space-x-4">  
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">Twitter</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+    </div>
+</div>
+    <div class="text-center">
+        &copy; Ashabul Yamin Tuhin all rights deserved
+    </div>
+</footer>
+
+
+
+
+    <script src="1.js"></script>
+</body>
+</html>
